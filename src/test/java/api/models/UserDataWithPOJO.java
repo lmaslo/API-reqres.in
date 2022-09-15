@@ -1,13 +1,13 @@
-package api;
+package api.models;
 
-public class UserData {
+public class UserDataWithPOJO {
     private Integer id;
     private String email;
     private String first_name;
     private String last_name;
     private String avatar;
 
-    public UserData(Integer id, String email, String first_name, String last_name, String avatar) {
+    public UserDataWithPOJO(Integer id, String email, String first_name, String last_name, String avatar) {
         this.id = id;
         this.email = email;
         this.first_name = first_name;
