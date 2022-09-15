@@ -11,6 +11,7 @@ dependencies {
             "io.rest-assured:rest-assured:5.2.0",
             'com.codeborne:selenide:6.3.5',
             "org.junit.jupiter:junit-jupiter:5.8.2",
+            'junit:junit:4.4',
             "org.slf4j:slf4j-api:1.7.36"
     )
 }
