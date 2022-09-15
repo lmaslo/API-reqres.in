@@ -1,5 +1,6 @@
-package api;
+package api.tests;
 
+import api.specifications.Specifications;
 import api.models.UserDataWithLombok;
 
 
