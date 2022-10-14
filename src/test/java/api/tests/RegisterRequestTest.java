@@ -4,7 +4,9 @@ import api.models.Register;
 import api.models.SuccessReg;
 import api.models.UnSuccessReg;
 import api.specifications.Specifications;
+import io.qameta.allure.Description;
 import org.junit.Assert;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.Matchers.*;
@@ -15,6 +17,8 @@ import static io.restassured.RestAssured.given;
 public class RegisterRequestTest {
 
     @Test
+    @DisplayName("Сравнение параметров ответа")
+    @Description("Проверка, что id, token соответствуют заданным")
     public void successRegister() {
         Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseSpecStatus200());
         Integer id = 4;
@@ -47,6 +51,8 @@ public class RegisterRequestTest {
     }
 
     @Test
+    @DisplayName("Текст ошибки")
+    @Description("Проверка, что текст ошибки соответствует заданному")
     public void unSuccessRegister(){
         Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseSpecStatus400());
         Register user = new Register("sydney@fife", "");

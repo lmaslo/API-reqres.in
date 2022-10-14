@@ -10,6 +10,7 @@ import static io.restassured.RestAssured.given;
 
 public class UserTimeResponseTest {
     @Test
+    //need fix
     public void userTimeTest() {
         Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseSpecStatus200());
         UserTime user = new UserTime("morpheus", "zion resident");

@@ -2,7 +2,9 @@ package api.tests;
 
 import api.models.ColorsData;
 import api.specifications.Specifications;
+import io.qameta.allure.Description;
 import org.junit.Assert;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -15,6 +17,8 @@ import static io.restassured.RestAssured.given;
 public class ListResourseTest {
 
     @Test
+    @DisplayName("Сортировка по году ")
+    @Description("Проверка, что в ответе сервера пользователи отсортированы по году")
     public void sortYearsTest(){
         Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseSpecStatus200());
 
