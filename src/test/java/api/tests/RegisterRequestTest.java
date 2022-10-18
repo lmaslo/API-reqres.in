@@ -1,8 +1,6 @@
 package api.tests;
 
-import api.models.Register;
-import api.models.SuccessReg;
-import api.models.UnSuccessReg;
+import api.models.*;
 import api.specifications.Specifications;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
@@ -61,4 +59,5 @@ public class RegisterRequestTest {
                 .extract().as(UnSuccessReg.class);
         Assert.assertEquals(error, unSuccessReg.getError());
     }
+
 }
