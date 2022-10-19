@@ -32,7 +32,7 @@ gradle clean test
 ```
 
 ## :bar_chart: Allure-отчет
-<img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/011-maslogirl-FinalProject-API/2/allure/">Allure report</a>
+<img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/4/allure/">Allure report</a>
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/011-maslogirl-FinalProject/3/allure/#graph"><img src="images/screen/allure.jpg" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/4/allure/"><img src="images/screen/allure.png" alt="Allure"/></a>
 </p>
