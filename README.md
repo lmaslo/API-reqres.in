@@ -3,16 +3,11 @@
 
 ## :memo: Содержание:
 
-- [Реализованные проверки](#boom-Реализованные-проверки)
 - [Технологии](#classical_building-Технологии)
 - [Сборка в Jenkins](#man_cook-Jenkins-job)
 - [Allure отчет](#bar_chart-Allure-отчет)
 
-## :boom: Реализованные проверки
-
-- Добавить
-
-## :classical_building: Технологии
+## :boom: Технологии
 <p align="center">
 <img width="6%" title="Idea" src="images/logo/Idea.svg">
 <img width="6%" title="Java" src="images/logo/Java.svg">
