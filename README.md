@@ -22,7 +22,7 @@
 ## :man_cook: Jenkins job
 <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a>  <a target="_blank" href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/">Jenkins job</a>
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/011-maslogirl-FinalProject-API/"><img src="images/screen/jenkins.jpg" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/011-maslogirl-FinalProject-API/"><img src="images/screen/jenkins.png" alt="Jenkins"/></a>
 </p>
 
 
@@ -35,4 +35,5 @@ gradle clean test
 <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/4/allure/">Allure report</a>
 <p align="center">
 <a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/4/allure/"><img src="images/screen/allure.png" alt="Allure"/></a>
+  <a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/4/allure/"><img src="images/screen/allure2.png" alt="Allure"/></a>
 </p>
