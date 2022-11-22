@@ -33,7 +33,11 @@ dependencies {
             "org.junit.jupiter:junit-jupiter:5.8.2",
             'junit:junit:4.4',
             "io.qameta.allure:allure-rest-assured:$allureVersion",
-            "org.slf4j:slf4j-api:1.7.36"
+            "org.slf4j:slf4j-api:1.7.36",
+            "com.fasterxml.jackson.core:jackson-databind:2.13.4",
+            "com.fasterxml.jackson.module:jackson-module-scala_3:2.13.4"
+
+
     )
 }
 
