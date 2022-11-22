@@ -19,10 +19,19 @@
 <img width="6%" title="REST Assured" src="images/logo/logo-transparent.png">
 </p>
 
+
+- В данном проекте автотесты написаны на **Java** с использованием  **RestAssured**.
+- Для сборки проекта используется **Gradle**.
+- **JUnit 5** используется как фреймворк для модульного тестирования.
+- Запуск тестов выполняется из **Jenkins**.
+- **Allure Report** для визуализации результатов тестирования.
+
+
+
 ## :man_cook: Jenkins job
 <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a>  <a target="_blank" href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/">Jenkins job</a>
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/011-maslogirl-FinalProject-API/"><img src="images/screen/jenkins.png" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/"><img src="images/screen/jenkins2.png" alt="Jenkins"/></a>
 </p>
 
 
