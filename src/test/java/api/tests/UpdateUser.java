@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import java.time.Clock;
 
+import static api.listeners.CustomAllureListener.withCustomTemplates;
 import static api.tests.TestBase.URL;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
@@ -18,28 +19,24 @@ public class UpdateUser {
 
     @Test
     @DisplayName("Проверка параметра UpdatedAt")
-    @Description("Проверка, что время которое возвращается в параметре UpdatedAt совпадает с серверным с погрешностью до 10 минут")
+    @Description("Проверка, что время которое возвращается в параметре UpdatedAt совпадает с серверным")
     public void timeTest(){
         Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseSpecStatus200());
         UserTime user = new UserTime("morpheus", "zion resident");
         UserTimeResponse response = given()
                 .body(user)
                 .when()
+                .filter(withCustomTemplates())
                 .put("api/users/2")
                 .then().log().all()
                 .extract().as(UserTimeResponse.class);
 
-        //String regex = "(.{12})$";
-        //String currentTime = Clock.systemUTC().instant().toString().replaceAll(regex,"");
         String currentTime = Clock.systemUTC().instant().toString();
         currentTime=currentTime.substring(0,14);
 
-       // String regexResp = "(.{6})$";
-       // String respTime = response.getUpdatedAt().replaceAll(regexResp,"");
         String respTime = response.getUpdatedAt();
         respTime=respTime.substring(0,14);
 
         Assert.assertEquals(currentTime,respTime);
-
     }
 }
