@@ -13,14 +13,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static api.listeners.CustomAllureListener.withCustomTemplates;
+import static api.tests.TestBase.URL;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 
 public class ListUsersRequestTest {
-
-    public final static String URL = "https://reqres.in/";
 
     @Test
     @DisplayName("Scheme ответа")
@@ -82,10 +81,11 @@ public class ListUsersRequestTest {
 
 
     @Test
-    @DisplayName("1")
-    @Description("1")
-    public void checkresponse() {
-
+    @DisplayName("Аватар содержит id пользователя, без использования модели")
+    @Description("Проверка, что у каждого пользователя в строке с автаром есть id, без использования модели." +
+            "Проверка значения параметра page" +
+            "Проверка что данные в массиве data не пустые")
+    public void checkAvatarAndIdTestWithOutModel() {
         Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseSpecStatus200());
         Response response = given()
                 .when()
@@ -99,17 +99,31 @@ public class ListUsersRequestTest {
                 .body("data.last_name", notNullValue())
                 .body("data.avatar", notNullValue())
                 .extract().response();
-        JsonPath jsonPath=response.jsonPath();
+        JsonPath jsonPath = response.jsonPath();
 
-        List <String> emails =jsonPath.get("data.email");
-        List <Integer> ids =jsonPath.get("data.id");
-        List <String> avatars =jsonPath.get("data.avatar");
+        List<String> emails = jsonPath.get("data.email");
+        List<Integer> ids = jsonPath.get("data.id");
+        List<String> avatars = jsonPath.get("data.avatar");
 
-        for (int i=0;i<avatars.size(); i++){
+        for (int i = 0; i < avatars.size(); i++) {
             Assert.assertTrue(avatars.get(i).contains(ids.get(i).toString()));
         }
+    }
 
-        Assert.assertTrue(emails.stream().allMatch(x->x.endsWith("@reqres.in")));
+    @Test
+    @DisplayName("Email оканчивается на reqres.in")
+    @Description("Проверка, что Email оканчивается на reqres.in, без использования модели")
+    public void checkEmailWithOutModel() {
+        Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseSpecStatus200());
+        Response response = given()
+                .when()
+                .filter(withCustomTemplates())
+                .get("api/users?page=1")
+                .then().log().all()
+                .extract().response();
+        JsonPath jsonPath = response.jsonPath();
+        List<String> emails = jsonPath.get("data.email");
+        Assert.assertTrue(emails.stream().allMatch(x -> x.endsWith("@reqres.in")));
     }
 
 }

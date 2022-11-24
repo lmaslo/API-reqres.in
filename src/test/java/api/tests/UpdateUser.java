@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import java.time.Clock;
 
-import static api.tests.ListUsersRequestTest.URL;
+import static api.tests.TestBase.URL;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 
