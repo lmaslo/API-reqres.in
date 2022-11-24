@@ -3,6 +3,8 @@ package api.tests;
 import api.specifications.Specifications;
 import api.models.UserDataWithLombok;
 import io.qameta.allure.Description;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
 import junit.framework.Assert;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -13,9 +15,8 @@ import java.util.stream.Collectors;
 import static api.listeners.CustomAllureListener.withCustomTemplates;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-
-
-
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.notNullValue;
 
 public class ListUsersRequestTest {
 
@@ -79,6 +80,37 @@ public class ListUsersRequestTest {
         }
     }
 
+
+    @Test
+    @DisplayName("1")
+    @Description("1")
+    public void checkresponse() {
+
+        Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseSpecStatus200());
+        Response response = given()
+                .when()
+                .filter(withCustomTemplates())
+                .get("api/users?page=1")
+                .then().log().all()
+                .body("page", equalTo(1))
+                .body("data.id", notNullValue())
+                .body("data.email", notNullValue())
+                .body("data.first_name", notNullValue())
+                .body("data.last_name", notNullValue())
+                .body("data.avatar", notNullValue())
+                .extract().response();
+        JsonPath jsonPath=response.jsonPath();
+
+        List <String> emails =jsonPath.get("data.email");
+        List <Integer> ids =jsonPath.get("data.id");
+        List <String> avatars =jsonPath.get("data.avatar");
+
+        for (int i=0;i<avatars.size(); i++){
+            Assert.assertTrue(avatars.get(i).contains(ids.get(i).toString()));
+        }
+
+        Assert.assertTrue(emails.stream().allMatch(x->x.endsWith("@reqres.in")));
+    }
 
 }
 
