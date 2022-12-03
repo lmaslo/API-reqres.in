@@ -1,10 +1,12 @@
-# Проект по автоматизации тестирования API на тестовом сайте reqres.in. 
-<a target="_blank" href="https://reqres.in/">Веб сайт reqres.in</a>
+# Проект по автоматизации тестирования API на сайте reqres.in
 <p align="center">
 <a href="https://reqres.in/"><img src="images/screen/logoReqres2.jpg" alt="reqres.in"/></a>
 </p>
 
-
+Документация для сайта reqres.in выложена на главной странице и доступна всем пользователям.
+<p align="center">
+<a href="https://reqres.in/"><img src="images/screen/apiDocs.jpg" alt="reqres.in"/></a>
+</p>
 
 ## :memo: Содержание:
 
