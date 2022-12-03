@@ -1,7 +1,7 @@
 # Проект по автоматизации тестирования API на тестовом сайте reqres.in. 
 <a target="_blank" href="https://reqres.in/">Веб сайт reqres.in</a>
 <p align="center">
-<a href="https://reqres.in/"><img src="images/screen/logoReqres.jpg" alt="reqres.in"/></a>
+<a href="https://reqres.in/"><img src="images/screen/logoReqres2.jpg" alt="reqres.in"/></a>
 </p>
 
 
