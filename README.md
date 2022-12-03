@@ -55,10 +55,10 @@
 <a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/"><img src="images/screen/jenkins.PNG" alt="Jenkins"/></a>
 </p>
 
-```
+
 <a target="_blank" href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/">Jenkins job для просомтра и запуска нужна авторизация.</a>
 <p align="center"> 
-```
+
 
 ###  Локальный запуск:
 ```
