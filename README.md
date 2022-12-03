@@ -5,7 +5,7 @@
 
 Документация для сайта reqres.in выложена на главной странице и доступна всем пользователям.
 <p align="center">
-<a href="https://reqres.in/"><img src="images/screen/apiDocs.jpg" alt="reqres.in"/></a>
+<a <img src="images/screen/apiDocs.PNG" alt="apiDocs"/></a>
 </p>
 
 ## :memo: Содержание:
