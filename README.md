@@ -52,11 +52,13 @@
 
 
 ## :man_cook: Jenkins job
-<img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a>  <a target="_blank" href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/">Jenkins job</a>
-<p align="center">
-<a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/"><img src="images/screen/jenkins2.png" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/"><img src="images/screen/jenkins.PNG" alt="Jenkins"/></a>
 </p>
 
+```
+<a target="_blank" href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/">Jenkins job для просомтра и запуска нужна авторизация.</a>
+<p align="center"> 
+```
 
 ###  Локальный запуск:
 ```
