@@ -40,6 +40,7 @@
 <img width="6%" title="GitHub" src="images/logo/GitHub.svg">
 <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
 <img width="6%" title="REST Assured" src="images/logo/logo-transparent.png">
+<img width="6%" title="Lombok" src="images/logo/lombok.svg">
 </p>
 
 
@@ -48,6 +49,7 @@
 - **JUnit 5** используется как фреймворк для модульного тестирования.
 - Запуск тестов выполняется из **Jenkins**.
 - **Allure Report** для визуализации результатов тестирования.
+- Используется модель **Page Object** и библиотека **Lombok**
 
 
 
@@ -67,17 +69,18 @@ gradle clean test
 
 ## :bar_chart: Allure-отчет
 <a target="_blank" href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/10/allure/">Отчет Allure </a> для просомтра нужна авторизация на <a target="_blank" href="https://jenkins.autotests.cloud/">сайте</a>.
-<p align="center"> 
+
  <p align="center">
 <a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/10/allure/"><img src="images/screen/allure3.PNG" alt="Allure"/></a>
   </p>
- <p align="center">
-<a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/10/allure/"><img src="images/screen/allureTestList.PNG" alt="Allure"/></a>
- <a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/10/allure/"><img src="images/screen/allure3TestCase.PNG" alt="Allure"/></a>
-  </p>
-
- 
   
+  <p align="center">
+<img width="40%" title="Test_list" src="images/screen/allureTestList.PNG">
+<img width="40%" title="Example_Test_case" src="images/screen/allureTestList.PNG">
+</p>
+  
+  
+ 
 
 
 
