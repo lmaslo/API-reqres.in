@@ -68,13 +68,13 @@ gradle clean test
 ## :bar_chart: Allure-отчет
 <a target="_blank" href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/10/allure/">Отчет Allure </a> для просомтра нужна авторизация на <a target="_blank" href="https://jenkins.autotests.cloud/">сайте</a>.
 <p align="center"> 
-  
-  ![Alt-текст](https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/4/allure/ "Орк")
+ <p align="center">
+<a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/10/allure/"><img src="images/screen/allure3.PNG" alt="Allure"/></a>
+  </p>
+
  
   
-<p align="center">
-<a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/4/allure/"><img src="images/screen/allure.png" alt="Allure"/></a>
-  <a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/4/allure/"><img src="images/screen/allure2.png" alt="Allure"/></a>
-</p>
+
+
 
 
