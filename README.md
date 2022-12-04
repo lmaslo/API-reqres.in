@@ -56,7 +56,7 @@
 </p>
 
 
-<a target="_blank" href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/">Jenkins job для просомтра и запуска нужна авторизация.</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/">Jenkins job </a> для просомтра и запуска нужна авторизация на <a target="_blank" href="https://jenkins.autotests.cloud/">сайте</a>.
 <p align="center"> 
 
 
