@@ -75,8 +75,8 @@ gradle clean test
   </p>
   
   <p align="center">
-<img width="40%" title="Test_list" src="images/screen/allureTestList.PNG">
-<img width="40%" title="Example_Test_case" src="images/screen/allure3TestCase.PNG">
+<img width="37%" title="Test_list" src="images/screen/allureTestList.PNG">
+<img width="58%" title="Example_Test_case" src="images/screen/allure3TestCase.PNG">
 </p>
   
   
