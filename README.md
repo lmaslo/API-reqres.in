@@ -71,6 +71,10 @@ gradle clean test
  <p align="center">
 <a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/10/allure/"><img src="images/screen/allure3.PNG" alt="Allure"/></a>
   </p>
+   <p align="center">
+<a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/10/allure/"><img src="images/screen/allureTestList.PNG" alt="Allure"/></a>
+ <a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/10/allure/"><img src="images/screen/allure3TestCase.PNG" alt="Allure"/></a>
+  </p>
 
  
   
