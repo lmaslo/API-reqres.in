@@ -52,7 +52,7 @@
 
 
 ## :man_cook: Jenkins job
-<a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/"><img src="images/screen/jenkins.PNG" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/011-LMaslo-api-diplom/"><img src="images/screen/jenkins3.PNG" alt="Jenkins"/></a>
 </p>
 
 
